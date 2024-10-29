@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="coffee-buttons">
+            <h1>Cafe Caffeine</h1>
+            <div id="category-selection">
+                <button id="children-btn" onclick="selectCategory('children')">Children</button>
+                <button id="adult-btn" onclick="selectCategory('adult')">Adult</button>
+                <button id="elderly-btn" onclick="selectCategory('elderly')">Elderly</button>
+                <button id="pregnant-btn" onclick="selectCategory('pregnant')">Pregnant Woman</button>
+            </div>
+            <div id="limit-display">
+                <p id="caffeine-limit">Select category to see limit</p>
+            </div>
+            <div class="drink-buttons">
+                <button onclick="addCaffeine('coffeeBrewed')">☕ Coffee (Brewed) <span class="serving-size">(8 oz)</span></button>
+                <button onclick="addCaffeine('espresso')">☕ Espresso <span class="serving-size">(1 oz)</span></button>
+                <button onclick="addCaffeine('blackTea')">🍵 Black Tea <span class="serving-size">(8 oz)</span></button>
+                <button onclick="addCaffeine('greenTea')">🍃 Green Tea <span class="serving-size">(8 oz)</span></button>
+                <button onclick="addCaffeine('energyDrink')">⚡ Energy Drink <span class="serving-size">(8.4 oz)</span></button>
+                <button onclick="addCaffeine('cola')">🥤 Cola <span class="serving-size">(12 oz)</span></button>
+                <button onclick="addCaffeine('icedTea')">🧊 Iced Tea <span class="serving-size">(16.9 oz)</span></button>
+                <button onclick="addCaffeine('matchaLatte')">🍵 Matcha Latte <span class="serving-size">(8 oz)</span></button>
+                <button onclick="addCaffeine('coldBrew')">❄️ Cold Brew Coffee <span class="serving-size">(8 oz)</span></button>
+            </div>
+        </div>
+        
+        <div id="caffeine-box">
+            <h2>Total Caffeine</h2>
+            <div id="caffeine-details"></div>
+            <p id="caffeine-total">Total: 0 mg</p>
+            <button id="remove-all-btn" onclick="removeAllEntries()">Remove All</button>
+            <div id="health-info">
+                <h3>Caution: Caffeine Consumption</h3>
+                <p>
+                    Caffeine intake recommendations vary by category. The total caffeine value will turn 
+                    <span style="color: #ff4c4c;">red</span> if it exceeds the recommended limit. Excessive caffeine 
+                    intake can lead to health issues such as insomnia, increased heart rate, and anxiety. 
+                    Please monitor your intake carefully.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
