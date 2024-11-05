@@ -10,25 +10,28 @@
         <div id="coffee-buttons">
             <h1>Cafe Caffeine</h1>
             <div id="category-selection">
-                <button id="children-btn" onclick="selectCategory('children')">Children</button>
+                <button id="children-btn" onclick="selectCategory('children')">Children (12-17)</button>
                 <button id="adult-btn" onclick="selectCategory('adult')">Adult</button>
-                <button id="elderly-btn" onclick="selectCategory('elderly')">Elderly</button>
+                <button id="elderly-btn" onclick="selectCategory('elderly')">Elderly (65+)</button>
                 <button id="pregnant-btn" onclick="selectCategory('pregnant')">Pregnant Woman</button>
             </div>
             <div id="limit-display">
                 <p id="caffeine-limit">Select category to see limit</p>
             </div>
             <div class="drink-buttons">
-                <button onclick="addCaffeine('coffeeBrewed')">☕ Coffee (Brewed) <span class="serving-size">(8 oz)</span></button>
-                <button onclick="addCaffeine('espresso')">☕ Espresso <span class="serving-size">(1 oz)</span></button>
-                <button onclick="addCaffeine('blackTea')">🍵 Black Tea <span class="serving-size">(8 oz)</span></button>
-                <button onclick="addCaffeine('greenTea')">🍃 Green Tea <span class="serving-size">(8 oz)</span></button>
-                <button onclick="addCaffeine('energyDrink')">⚡ Energy Drink <span class="serving-size">(8.4 oz)</span></button>
-                <button onclick="addCaffeine('cola')">🥤 Cola <span class="serving-size">(12 oz)</span></button>
-                <button onclick="addCaffeine('icedTea')">🧊 Iced Tea <span class="serving-size">(16.9 oz)</span></button>
-                <button onclick="addCaffeine('matchaLatte')">🍵 Matcha Latte <span class="serving-size">(8 oz)</span></button>
-                <button onclick="addCaffeine('coldBrew')">❄️ Cold Brew Coffee <span class="serving-size">(8 oz)</span></button>
+                <button onclick="addCaffeine('coffeeBrewed')">☕ Espresso Shot <span class="serving-size">(30 mL) ~ 63mg</span></button>
+                <button onclick="addCaffeine('espresso')">☕ Coffee <span class="serving-size">(250 mL) ~ 95 mg</span></button>
+                <button onclick="addCaffeine('blackTea')">☕ Decaf Coffee <span class="serving-size">(250 mL) ~ 2 mg</span></button>
+                <button onclick="addCaffeine('greenTea')">☕ Black Tea <span class="serving-size">(250 mL) ~ 47 mg</span></button>
+                <button onclick="addCaffeine('energyDrink')">🍃 Green Tea <span class="serving-size">(250 mL) ~ 40 mg</span></button>
+                <button onclick="addCaffeine('cola')">⚡ Pre workout <span class="serving-size">(1 scoop) ~ 200 mg</span></button>
+                <button onclick="addCaffeine('icedTea')">⚡ Monster <span class="serving-size">(355 mL) ~ 160 mg</span></button>
+                <button onclick="addCaffeine('matchaLatte')">⚡ Celsius <span class="serving-size">(355 mL) ~ 140 mg</span></button>
+                <button onclick="addCaffeine('coldBrew')">⚡ Red Bull <span class="serving-size">(355 mL) ~ 110 mg</span></button> 
             </div>
+            <p id="disclaimer">
+                Figures are estimates and may vary. These values are guidelines and should not be used for precise calculations.
+            </p>
         </div>
         
         <div id="caffeine-box">
