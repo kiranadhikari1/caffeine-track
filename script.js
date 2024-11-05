@@ -1,14 +1,16 @@
 // Caffeine content for each drink
 const caffeineContent = {
-    coffeeBrewed: 95,
-    espresso: 63,
+    espressoShot: 63,
+    coffee: 95,
+    decafCoffee: 2,
     blackTea: 47,
-    greenTea: 28,
-    energyDrink: 80,
-    cola: 34,
-    icedTea: 30,
-    matchaLatte: 70,
-    coldBrew: 200
+    greenTea: 40,
+    preWorkout: 200,
+    monster: 160,
+    celsius: 140,
+    redBull: 110,
+    caffeinePill: 200,
+    soda: 34
 };
 
 // Caffeine limits for different categories
@@ -21,15 +23,17 @@ const caffeineLimits = {
 
 // Initializing variables
 let drinkCounts = {
-    coffeeBrewed: 0,
-    espresso: 0,
+    espressoShot: 0,
+    coffee: 0,
+    decafCoffee: 0,
     blackTea: 0,
     greenTea: 0,
-    energyDrink: 0,
-    cola: 0,
-    icedTea: 0,
-    matchaLatte: 0,
-    coldBrew: 0
+    preWorkout: 0,
+    monster: 0,
+    celsius: 0,
+    redBull: 0,
+    caffeinePill: 0,
+    soda: 0
 };
 let totalCaffeine = 0;
 let selectedCategory = null;
@@ -118,15 +122,17 @@ function updateDisplay() {
 // Helper function to format and return drink name
 function formatDrinkName(drink) {
     const drinkNames = {
-        coffeeBrewed: "Coffee (Brewed)",
-        espresso: "Espresso",
+        espressoShot: "Espresso Shot",
+        coffee: "Coffee",
+        decafCoffee: "Decaf Coffee",
         blackTea: "Black Tea",
         greenTea: "Green Tea",
-        energyDrink: "Energy Drink (Average)",
-        cola: "Cola (Regular)",
-        icedTea: "Iced Tea (Bottled)",
-        matchaLatte: "Matcha Latte",
-        coldBrew: "Cold Brew Coffee"
+        preWorkout: "Pre Workout",
+        monster: "Monster",
+        celsius: "Celsius",
+        redBull: "Red Bull",
+        caffeinePill: "Caffeine Pill",
+        soda: "Soda"
     };
     return drinkNames[drink] || drink;
 }
